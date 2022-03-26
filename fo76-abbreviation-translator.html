@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use JavaScript to Change Text</h2>
+<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+<p id="demo"></p>
+Name:<input type="text" id="myText" value="Mickey">
+<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+
+<script>
+ function myFunction() {
+        var x = document.getElementById("myText").value;
+        document.getElementById("demo").innerHTML = x;
+        
+    }
+</script> 
+
+</body>
+</html>
+
+
