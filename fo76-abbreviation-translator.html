@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script 
+        type = "text/javascript" src="translator.js">
+
+        </script>
+    </head>
 <body>
 
-<h2>Use JavaScript to Change Text</h2>
-<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+<h2>Fallout 76 Legendary Abbreviation Transaltor</h2>
+<p>Enter text to translate here:</p>
 
 <p id="demo"></p>
-Name:<input type="text" id="myText" value="Mickey">
-<button type="button" onclick="myFunction()">Try it</button>
+Name:<input type="text" id="myText" value="Q50c25">
+<button type="button" onclick="translateInput()">Translate</button>
 <p id="demo"></p>
 
 
 <script>
- function myFunction() {
-        var x = document.getElementById("myText").value;
-        document.getElementById("demo").innerHTML = x;
-        
+    function translateInput() {
+        var input = document.getElementById("myText").value;
+        var output = "";
+        output = translate(input);    
+        document.getElementById("demo").innerHTML = output;
     }
-</script> 
+
+
+</script>
 
 </body>
 </html>
-
-
