@@ -2,7 +2,7 @@
 <html>
     <head>
         <script 
-        type = "text/javascript" src="translator.js">
+        type = "text/javascript" src="./translator.js">
 
         </script>
     </head>
@@ -11,18 +11,17 @@
 <h2>Fallout 76 Legendary Abbreviation Transaltor</h2>
 <p>Enter text to translate here:</p>
 
-<p id="demo"></p>
-Name:<input type="text" id="myText" value="Q50c25">
-<button type="button" onclick="translateInput()">Translate</button>
-<p id="demo"></p>
+<p id="translator_input"></p>
+Name:<input type="text" id="input_text" value="Q50c25">
+<button type="button" onclick="translateInput()">Try it</button>
+<p id="translator_input"></p>
 
 
 <script>
     function translateInput() {
-        var input = document.getElementById("myText").value;
-        var output = "";
-        output = translateInput(input);    
-        document.getElementById("demo").innerHTML = output;
+        var input = document.getElementById("input_text").value;
+        var output = translate(input);    
+        document.getElementById("translator_input").innerHTML = output;
     }
 
 
