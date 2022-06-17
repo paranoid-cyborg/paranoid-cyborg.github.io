@@ -355,4 +355,4 @@ function translate(input) {
 
     return output; 
 }
-exports.translate = translate;
+//exports.translate = translate;
