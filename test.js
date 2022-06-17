@@ -10,7 +10,7 @@
 const chai = require('chai')
 const expect = chai.expect
 
-const translator = require('../src/translator')
+const translator = require('./translator')
 
 describe('Translator', () => {
 	describe('Translate', () => {
