@@ -59,7 +59,7 @@ function translate(input) {
 
     const secondary_armor_effects  = "\\+1|((1| )(S|P|E|C|I|A|L))|Str|Per|End|Cha|Int|Agi|Lck|Power|Pwr|APRefresh|AP(" + delims + tertiary_lookahead_armor + ")|Dis|Disease|Rad|(D|R|P)R|25(D|R|P)|Poi|Glut|Fire|FP|Warm|Cryo|Hardy|7|Exp|EDR";
 
-    // Already-translated regexes are used when looking backwards, as we're translates legendary abbreviations sequentially.
+    // Already-translated regexes are used when looking backwards, as we're translating legendary abbreviations sequentially.
     const secondary_ranged_weapon_effects_translated ="(bashing|limb|Critical) damage|by 40%|while aiming|explosive|fire rate|hit chance|last shot|per kill"
     const secondary_melee_weapon_effects_translated = "(limb|Power Attack) damage|swing speed|while blocking|standing still"
     const secondary_armor_effects_translated = "\\+1 (Strength|Perception|Endurance|Agility|Charisma|Intelligence|Agility|Luck)|AP Refresh|(Disease|Radiation|Poison|Fire|Cryo) Resistance|10% slower|explosion damage"
