@@ -217,7 +217,7 @@ function translate(input) {
     output = output.replace(swingspeedRegex, " 40% faster swing speed")
     // and shared.
     output = output.replace(limb_dmg_regex, " 50% limb damage");
-    output = output.replace(/(| )(50c|50crit)/gi, " 50% V.A.T.S Critical damage")
+    output = output.replace(/(| )(50c(?!al)|50crit)/gi, " 50% V.A.T.S Critical damage")
     output = output.replace(regen_ap_regex, " Replenish 15 AP per kill")
 
 

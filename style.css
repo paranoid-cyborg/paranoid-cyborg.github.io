@@ -1,7 +1,27 @@
+
+/* 
+* Changes input box color. Disabled until I figure out how to change the button color as well
+input[type=text] {
+  background: #363636;
+  color: #fce283;
+}
+This is meant to change the Submit button's color. It does not. Disabled until I fix it to avoid confusion
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+*/
+
 body {
     padding: 0;
     margin: 0;
-    background: #000;
+    background: #151515;
     color: #fce283;
     font-size: 20px;
     font-family: 'Fira Code', monospace;
@@ -24,7 +44,7 @@ body {
   }
   
   a:hover, a:focus {
-    color: #000;
+    color: #1a1a1a;
     background: #fce283;
   }
   
