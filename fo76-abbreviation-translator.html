@@ -7,21 +7,23 @@
 <body>
 
 <h2>Fallout 76 Legendary Abbreviation Translator</h2>
-</p > Created by Joseph Wallace for the benefit of the FO76 community. 
+<h3>Created by Joseph Wallace for the benefit of the FO76 community.<br>
+    Note: Translation not currently available on Internet Explorer and Safari, sorry! 
+</h3>
 
-This tool supports multiple commonly used abbreviations for each legendary trait.  </p>
-
-<p id="translator_input"></p>
-Enter text here: <input type="text" id="input_text" value="Q50c25">
+Enter text here: <input type="text" id="input_text" value="B2525 Fixer">
 <button type="button" onclick="translateInput()">Translate</button>
 <p id="translator_input"></p>
+<p id="translator_output"></p>
 
 
 <script>
     function translateInput() {
-        var input = document.getElementById("input_text").value;
-        var output = translate(input);    
-        document.getElementById("translator_input").innerHTML = output;
+        var input = document.getElementById("input_text").value
+        var userInput = "Input: " + input
+        document.getElementById("translator_input").innerHTML = userInput
+        var output = "Output: " + translate(input);    
+        document.getElementById("translator_output").innerHTML = output
     }
 
 

@@ -23,9 +23,22 @@ body {
     margin: 0;
     background: #151515;
     color: #fce283;
-    font-size: 20px;
-    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', monospace;
     font-variant-ligatures: none;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: initial
+  }
+  
+  h4{
+    font-size: 16px;
+    font-weight: initial
   }
   
   a {
@@ -54,7 +67,8 @@ body {
   }
   /*
   // http://aleclownes.com/2017/02/01/crt-display.html
-  */
+
+  Still need to get this working, so it's commented out for now to avoid confusion
   @keyframes flicker {
     0% {
       opacity: 0.27861;

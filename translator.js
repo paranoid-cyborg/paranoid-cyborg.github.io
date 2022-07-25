@@ -355,5 +355,5 @@ function translate(input) {
 
     return output; 
 }
-// export statement below is for mocha/chai testing
+//export statement below is for mocha/chai testing
 //exports.translate = translate;

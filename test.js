@@ -495,6 +495,9 @@ describe('Translator', () => {
 		it('[Reddit title #1]', () => { 
 			expect(translator.translate("H: A question: Did you f**k around and not get ready for double XP weekend? I got you covered. W: At least an AAE50 laser? Or some downvotes if you think this is unreasonable.")).to.equal("Have: A question: Did you f**k around and not get ready for double XP weekend? I got you covered. Want: At least an Anti-Armor Explosive 50 Damage Resistance while aiming laser? Or some downvotes if you think this is unreasonable.")
 		})
+		it('[Reddit title #2]', () => { 
+			expect(translator.translate("H: QE15r Double Barrel, TSE90 50cal, BE90 50cal, QFFR90 Tesla, More W: Wishlist Armors")).to.equal("Have: Quad Explosive 15% faster reload Double Barrel, Two Shot Explosive 90% reduced weight 50cal, Bloodied Explosive 90% reduced weight 50cal, Quad 25% faster fire rate 90% reduced weight Tesla, More Want: Wishlist Armors")
+		})
 
 	})
 })
